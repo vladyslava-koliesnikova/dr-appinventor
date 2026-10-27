@@ -1,0 +1,253 @@
+{
+    "scoring_rubric": {
+        "Logic": {
+            "description": "Use of selection structures (if, if-else, complex conditions, nesting)",
+            "max": 4
+        },
+        "Loops": {
+            "description": "Use of iteration structures (for, while, for-each, nesting)",
+            "max": 3
+        },
+        "Variables": {
+            "description": "Declaration and use of global/local variables, meaningful names",
+            "max": 3
+        },
+        "Procedures": {
+            "description": "Definition and use of reachable procedures, parameters, return values",
+            "max": 3
+        },
+        "User Interactivity": {
+            "description": "Event-driven programming – number of event handlers",
+            "max": 4
+        },
+        "Event Diversity": {
+            "description": "Diversity of event types used",
+            "max": 4
+        },
+        "Composite Data Types": {
+            "description": "Use of lists, dictionaries and matrices",
+            "max": 2
+        },
+        "Data Persistence": {
+            "description": "Persistent data storage: TinyDB/File (local) or CloudDB/Spreadsheet/TinyWebDB/FirebaseDB (cloud)",
+            "max": 2
+        },
+        "User Interface Complexity": {
+            "description": "Screens, visible components, multimedia assets and naming conventions",
+            "max": 4
+        },
+        "Dead Code": {
+            "description": "Absence of dead procedures, floating blocks and unused variables",
+            "max": 1
+        }
+    },
+    "loop_types": [
+        "controls_forEach",
+        "controls_forRange",
+        "controls_while",
+        "controls_for"
+    ],
+    "condition_types": [
+        "controls_if"
+    ],
+    "event_types": [
+        "component_event",
+        "when_screen_initialize",
+        "when_screen_resume",
+        "when_screen_pause"
+    ],
+    "list_creators": [
+        "lists_create_with",
+        "lists_create_empty",
+        "make_a_list",
+        "lists_add_items"
+    ],
+    "list_operations": [
+        "lists_append_list",
+        "lists_insert_item",
+        "lists_replace_item",
+        "lists_remove_item",
+        "lists_pick_random_item",
+        "lists_length",
+        "lists_is_empty",
+        "lists_lookup_in_pairs",
+        "lists_is_list",
+        "lists_copy",
+        "lists_reverse",
+        "lists_sort",
+        "lists_index_of",
+        "lists_get_index",
+        "lists_set_index",
+        "lists_select_item",
+        "lists_position_in"
+    ],
+    "dictionary_operations": [
+        "lists_lookup_in_pairs",
+        "lists_pair",
+        "dictionaries_create_with",
+        "dictionaries_lookup",
+        "dictionaries_set_pair",
+        "dictionaries_get_values",
+        "dictionaries_get_keys",
+        "dictionaries_is_key_in",
+        "dictionaries_delete_pair",
+        "dictionaries_copy",
+        "dictionaries_combine_dicts",
+        "dictionaries_size",
+        "dictionaries_is_dict",
+        "dictionaries_alist_to_dict",
+        "dictionaries_dict_to_alist",
+        "dictionaries_recursive_lookup",
+        "dictionaries_recursive_set"
+    ],
+    "variable_block_types": [
+        "global_declaration",
+        "lexical_variable_set",
+        "lexical_variable_get",
+        "local_declaration_statement",
+        "local_declaration_expression"
+    ],
+    "block_type_descriptions": {
+        "text": "Text constant (e.g., \"Hello\")",
+        "logic_compare": "Comparison (e.g., greater than, equal)",
+        "logic_boolean": "Boolean constant (true/false)",
+        "logic_operation": "Logical operation (AND / OR)",
+        "logic_negate": "Logical negation (NOT)",
+        "lists_select_item": "Select list item by index",
+        "lists_position_in": "Find position of item in list",
+        "math_number": "Number constant",
+        "controls_closeScreen": "Close current screen",
+        "controls_openAnotherScreen": "Open another screen",
+        "helpers_screen_names": "List of screen names",
+        "text_join": "Join text strings",
+        "text_append": "Append text",
+        "text_length": "Text length",
+        "text_isEmpty": "Check if text is empty",
+        "text_trim": "Trim spaces",
+        "text_changeCase": "Change text case",
+        "text_toString": "Convert to text",
+        "text_indexOf": "Find substring index",
+        "text_charAt": "Get character at position",
+        "text_startsWith": "Check start of text",
+        "text_endsWith": "Check end of text",
+        "text_contains": "Check if text contains substring",
+        "text_split": "Split text into list",
+        "text_replace": "Replace text",
+        "color_make_color": "Create colour",
+        "color_red": "Colour – red",
+        "color_green": "Colour – green",
+        "color_blue": "Colour – blue",
+        "color_white": "Colour – white",
+        "color_black": "Colour – black",
+        "color_cyan": "Colour – cyan",
+        "color_magenta": "Colour – magenta",
+        "color_yellow": "Colour – yellow",
+        "color_orange": "Colour – orange",
+        "color_pink": "Colour – pink",
+        "color_brown": "Colour – brown",
+        "color_purple": "Colour – purple",
+        "color_gray": "Colour – gray",
+        "math_arithmetic": "Arithmetic operation (+, -, *, /)",
+        "math_random_int": "Random integer",
+        "controls_while": "While loop (already counted in iteration)",
+        "controls_for": "For loop (already counted)",
+        "controls_forEach": "For each loop (already counted)",
+        "controls_forRange": "For range loop (already counted)",
+        "controls_if": "If condition (already counted)",
+        "math_add": "Addition operator (+)",
+        "math_subtract": "Subtraction operator (-)",
+        "math_multiply": "Multiplication operator (×)",
+        "helpers_assets": "Asset helper block",
+        "math_compare": "Comparison operator (>, <, =, ≠)",
+        "math_division": "Division operator (÷)",
+        "math_round": "Round number",
+        "component_component_block": "Component selector",
+        "math_is_a_number": "Check if value is a number",
+        "math_is_a_whole_number": "Check if number is integer",
+        "math_is_positive": "Check if value is positive",
+        "math_negative": "Negation operator",
+        "math_on_list": "List math (sum, min, max, average)",
+        "math_single": "Mathematical function (sin, cos, sqrt, abs, ...)",
+        "math_trig": "Trigonometric function (sin, cos, tan)",
+        "math_constant": "Mathematical constant (π, e, φ)",
+        "math_random_float": "Random decimal number",
+        "math_modulo": "Modulo (remainder)",
+        "math_power": "Power (exponentiation)",
+        "math_sqrt": "Square root",
+        "math_abs": "Absolute value",
+        "text_print": "Print to console (debug)",
+        "lists_reverse": "Reverse list order",
+        "lists_sort": "Sort list",
+        "lists_copy": "Copy list",
+        "lists_is_list": "Check if value is a list",
+        "lists_get_index": "Get element at index",
+        "lists_set_index": "Set element at index",
+        "controls_break": "Break out of loop",
+        "controls_continue": "Skip to next loop iteration",
+        "controls_flow_statements": "Control flow (break/continue)",
+        "component_set_get": "Component property (get/set)",
+        "component_method": "Call component method",
+        "lists_to_csv_table": "Matrix / 2D list operation",
+        "list_from_csv_table": "Matrix / 2D list operation",
+        "lists_to_csv_row": "Matrix / 2D list operation",
+        "list_from_csv_row": "Matrix / 2D list operation",
+        "tinydb_storevalue": "TinyDB (local database)",
+        "tinydb_getvalue": "TinyDB (local database)",
+        "tinydb_removeitem": "TinyDB (local database)",
+        "tinydb_clearall": "TinyDB (local database)",
+        "tinydb_getentries": "TinyDB (local database)",
+        "clouddb_storevalue": "CloudDB (cloud database)",
+        "clouddb_getvalue": "CloudDB (cloud database)",
+        "clouddb_removeentry": "CloudDB (cloud database)",
+        "clouddb_clearall": "CloudDB (cloud database)"
+    },
+    "image_extensions": [
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".jfif",
+        ".gif",
+        ".webp",
+        ".bmp",
+        ".svg",
+        ".tiff",
+        ".ico"
+    ],
+    "audio_extensions": [
+        ".mp3",
+        ".wav",
+        ".ogg",
+        ".m4a",
+        ".aac",
+        ".flac",
+        ".mid",
+        ".midi",
+        ".amr"
+    ],
+    "video_extensions": [
+        ".mp4",
+        ".mov",
+        ".avi",
+        ".webm",
+        ".mkv",
+        ".3gp",
+        ".ts"
+    ],
+    "data_persistence_operations": [
+        "tinydb_storevalue",
+        "tinydb_getvalue",
+        "tinydb_removeitem",
+        "tinydb_clearall",
+        "tinydb_getentries",
+        "clouddb_storevalue",
+        "clouddb_getvalue",
+        "clouddb_removeentry",
+        "clouddb_clearall"
+    ],
+    "matrix_operations": [
+        "lists_to_csv_table",
+        "list_from_csv_table",
+        "lists_to_csv_row",
+        "list_from_csv_row"
+    ]
+}

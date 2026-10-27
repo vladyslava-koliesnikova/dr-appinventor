@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# Build files
+build/
+dist/
+*.exe
+*.zip
+
+# Temporary files
+*.log
+.DS_Store
